@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
 
+// 기본 클래스 생성
+class Player {
+  String? name;
+  Player({required this.name});
+}
+
 void main() {
+  var player = Player(name: "seunghoo");
   runApp(MyApp());
 }
 
@@ -11,10 +18,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Hello flutter"),
+          elevation: 3,
+          backgroundColor: Color.fromARGB(11, 177, 13, 13),
+          title: Text("저기가 오류였군"),
         ),
         body: Center(
-          child: Text("Hello Word"),
+          child: Text("타이틀이 바뀌나"),
         ),
       ),
     );
